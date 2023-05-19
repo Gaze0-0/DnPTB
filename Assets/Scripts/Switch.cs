@@ -10,6 +10,8 @@ public class Switch : MonoBehaviour
     public bool _CanFlip = true;
     public GameObject _LeverManager;
     bool _callCheck = false;
+
+    //rotates the lever and turns on/ off bool switch
     private void OnMouseDown()
     {
         if (_CanFlip)
@@ -30,6 +32,7 @@ public class Switch : MonoBehaviour
 
     private void Update()
     {
+        //checks if the switch is correct
         if (_CanFlip)
         {
             if (_isOn == _CorrectState)
@@ -41,6 +44,7 @@ public class Switch : MonoBehaviour
                 _Correct = false;
             }
         }
+        //calls to check if the puzzle is solved once
         if (_callCheck)
         {
             _LeverManager.GetComponent<LeverManager>().CheckPuzzle();

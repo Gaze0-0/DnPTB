@@ -15,6 +15,7 @@ public class Screw : MonoBehaviour
 
     private void Update()
     {
+        //rotates till the seconds needed to rotate are done and 
         if (_RotatingTimer > 0)
         {
             if (_IsRotating)
@@ -29,6 +30,7 @@ public class Screw : MonoBehaviour
         {
             _IsUnscrewed = true;
         }
+        //when unswrew is done, destroy this screw
         if (_IsUnscrewed)
         {
             _ScrewCase.GetComponent<BatteryCase>()._Screws--;
@@ -36,6 +38,7 @@ public class Screw : MonoBehaviour
         }
     }
 
+    //starts rotating
     private void OnMouseDown()
     {
         _IsRotating = true;
@@ -43,12 +46,14 @@ public class Screw : MonoBehaviour
 
     }
 
+    //stops rotating
     private void OnMouseUp()
     {
         _IsRotating = false;
         _ScrewDriver.SetActive(false);
     }
 
+    //rotates this counter clockwise
     void RotateObjectCounterclockwise()
     {
         transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);

@@ -16,7 +16,7 @@ public class BatteryCase : MonoBehaviour
     private void Update()
     {
         Screws();
-        Batteries();
+        BatteriesCheck();
         
     }
 
@@ -33,7 +33,7 @@ public class BatteryCase : MonoBehaviour
     }
 
     //checks if all batteries are installed and if so tells the game manager to remove a lock from its count
-    void Batteries()
+    void BatteriesCheck()
     {
         if (Batteries == 2)
         {

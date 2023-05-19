@@ -13,6 +13,7 @@ public class LeverManager : MonoBehaviour
     //this is a function called after each time a leverl is switched
     public void CheckPuzzle()
     {
+        //goes through each lever to check if the correct state is switched on and if it is add 1 to the correct count integer
         for (int i = 0; i < _Levers.Count; i++)
         {
             if (_Levers[i].GetComponent<Switch>()._Correct == true)
@@ -25,6 +26,7 @@ public class LeverManager : MonoBehaviour
                 return;
             }
         }
+        //if the number of correct answers match the amount of levers in the puzzle then the puzzle is solved
         if (_CorrectCount == _Levers.Count)
         {
             
