@@ -11,6 +11,12 @@ public class Switch : MonoBehaviour
     public GameObject _LeverManager;
     bool _callCheck = false;
 
+
+    private void Start()
+    {
+        SetupConections();
+    }
+
     //rotates the lever and turns on/ off bool switch
     private void OnMouseDown()
     {
@@ -51,4 +57,12 @@ public class Switch : MonoBehaviour
             _callCheck = false;
         }
     }
+
+    //sets up Connections at the start of the game
+    void SetupConections()
+    {
+        _LeverManager = transform.parent.parent.gameObject;
+    }
+
+
 }

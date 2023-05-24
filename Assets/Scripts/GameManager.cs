@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         _Timer_Countdown = 30.25f;
+        SetupConections();
     }
 
     private void Update()
@@ -41,5 +42,11 @@ public class GameManager : MonoBehaviour
         {
 
         }
+    }
+
+    //sets up Connections at the start of the game
+    void SetupConections()
+    {
+        _Timer = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
     }
 }

@@ -8,6 +8,12 @@ using UnityEngine.SceneManagement;
 public class Button : MonoBehaviour
 {
     public GameObject _Camera_GameManager;
+
+    private void Start()
+    {
+        SetupConections();
+    }
+
     //when button is pressed change the scene by incrementing the current scene by 1;
     private void OnMouseDown()
     {
@@ -15,6 +21,12 @@ public class Button : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+    }
+
+    //sets up Connections at the start of the game
+    void SetupConections()
+    {
+        _Camera_GameManager = GameObject.Find("Main Camera");
     }
 
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
@@ -7,8 +8,15 @@ public class LeverManager : MonoBehaviour
 {
     public List<GameObject> _Levers;
     public GameObject _Camera_GameManager;
+    public GameObject _Light;
 
     int _CorrectCount;
+
+
+    private void Start()
+    {
+        SetupConections();
+    }
 
     //this is a function called after each time a leverl is switched
     public void CheckPuzzle()
@@ -35,11 +43,31 @@ public class LeverManager : MonoBehaviour
                 _Levers[i].GetComponent<Switch>()._CanFlip = false;
             }
             _Camera_GameManager.GetComponent<GameManager>()._Lock_Count--;
+            _Light.GetComponent<LightFeedback>().ChangeColour();
         }
         if ( _CorrectCount != _Levers.Count)
         {
             _CorrectCount = 0;
         }
     }
-    
+
+
+    //sets up Connections at the start of the game
+    void SetupConections()
+    {
+        _Camera_GameManager = GameObject.Find("Main Camera");
+        _Light = transform.parent.gameObject; 
+
+
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            Debug.Log(transform.childCount);
+            Transform childTransform = transform.GetChild(i);
+            Transform grandchildTransform = childTransform.GetChild(0);
+            _Levers.Add(grandchildTransform.gameObject);
+            
+        }
+    }
+
+
 }

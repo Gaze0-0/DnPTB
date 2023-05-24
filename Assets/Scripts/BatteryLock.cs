@@ -19,4 +19,9 @@ public class BatteryLock : MonoBehaviour
         }
         
     }
+    //sets up Connections at the start of the game
+    void SetupConections()
+    {
+        
+    }
 }

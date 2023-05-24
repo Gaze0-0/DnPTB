@@ -31,9 +31,6 @@ public class Fade_Out : MonoBehaviour
         // Check if transparency has reached 0
         if (currentAlpha <= 0f)
         {
-            // Disable or destroy the object if desired
-            //gameObject.SetActive(false); // Disable the object
-            // or
              Destroy(gameObject); // Destroy the object
         }
     }

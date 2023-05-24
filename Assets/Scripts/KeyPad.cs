@@ -13,7 +13,10 @@ public class KeyPad : MonoBehaviour
     public GameObject _Camera_GameManager;
     public TextMeshPro _Screen;
 
-
+    private void Start()
+    {
+        SetupConections();
+    }
     private void Update()
     {
         if (_IsActive)
@@ -36,4 +39,13 @@ public class KeyPad : MonoBehaviour
             }
         }
     }
+
+
+    //sets up Connections at the start of the game
+    void SetupConections()
+    {
+        _Camera_GameManager = GameObject.Find("Main Camera");
+        _Screen = transform.Find("Code Number").GetComponentInChildren<TextMeshPro>();
+    }
+
 }

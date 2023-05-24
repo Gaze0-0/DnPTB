@@ -13,6 +13,11 @@ public class BatteryCase : MonoBehaviour
     public GameObject _Camera_GameManager; //referance to game Manager in the camera
 
 
+    private void Start()
+    {
+        SetupConections();
+    }
+
     private void Update()
     {
         Screws();
@@ -40,5 +45,11 @@ public class BatteryCase : MonoBehaviour
             _Camera_GameManager.GetComponent<GameManager>()._Lock_Count--;
             Batteries++;
         }
+    }
+
+    //sets up Connections at the start of the game
+    void SetupConections()
+    {
+        _Camera_GameManager = GameObject.Find("Main Camera");
     }
 }

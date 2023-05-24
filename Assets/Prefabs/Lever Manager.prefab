@@ -45,3 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Levers: []
+  _Camera_GameManager: {fileID: 0}
+  _Light: {fileID: 0}

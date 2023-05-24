@@ -12,7 +12,10 @@ public class Screw : MonoBehaviour
     public GameObject _ScrewDriver;
     public GameObject _ScrewCase;
 
-
+    private void Start()
+    {
+        SetupConections();
+    }
     private void Update()
     {
         //rotates till the seconds needed to rotate are done and 
@@ -57,6 +60,13 @@ public class Screw : MonoBehaviour
     void RotateObjectCounterclockwise()
     {
         transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+    }
+
+    //sets up Connections at the start of the game
+    void SetupConections()
+    {
+        _ScrewDriver = transform.GetChild(0).gameObject;
+        _ScrewCase = transform.parent.gameObject;
     }
 
 }

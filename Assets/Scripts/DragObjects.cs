@@ -19,6 +19,7 @@ public class DragObjects : MonoBehaviour
         isDragging = false;
         zDistanceToCamera = Mathf.Abs(Camera.main.transform.position.z - transform.position.z);
         objectCollider = GetComponent<Collider>();
+        SetupConections();
     }
 
     private void OnMouseDown()
@@ -84,5 +85,11 @@ public class DragObjects : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(mousePosition);
     }
 
-    
+
+    //sets up Connections at the start of the game
+    void SetupConections()
+    {
+        _Camera_GameManager = GameObject.Find("Main Camera");
+    }
+
 }
