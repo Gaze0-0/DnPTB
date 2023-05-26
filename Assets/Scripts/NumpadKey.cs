@@ -16,7 +16,23 @@ public class NumpadKey : MonoBehaviour
     //tells the parent keypad to add this keys value to the code that is being entered
     private void OnMouseDown()
     {
-        _Keypad.GetComponent<KeyPad>()._Code += _Key;
+        if (_Key != "!" && _Key != "*")
+        {
+            if (_Keypad.GetComponent<KeyPad>()._Code.Length < 4)
+            {
+                _Keypad.GetComponent<KeyPad>()._Code += _Key;
+            }
+        }
+        else if (_Key == "!")
+        {
+            //clear
+            _Keypad.GetComponent<KeyPad>()._Code = "";
+        }
+        else if ( _Key == "*")
+        {
+            //check
+            _Keypad.GetComponent <KeyPad>()._Check = true;
+        }
     }
 
     //sets up Connections at the start of the game
