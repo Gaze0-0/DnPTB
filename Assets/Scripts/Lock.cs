@@ -5,6 +5,7 @@ using UnityEngine;
 public class Lock : MonoBehaviour
 {
     public GameObject _Camera_GameManager;
+    public GameObject _Button_Lid;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class Lock : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(this.gameObject);
             _Camera_GameManager.GetComponent<GameManager>()._Lock_Count--;
+            _Button_Lid.GetComponent<CaseMovement>()._OpenCase = true;
         }
     }
 
@@ -28,5 +30,9 @@ public class Lock : MonoBehaviour
     void SetupConections()
     {
         _Camera_GameManager = GameObject.Find("Main Camera");
+        if (GameObject.Find("Button case pivot point") != null)
+        {
+            _Button_Lid = GameObject.Find("Button case pivot point");
+        }
     }
 }
