@@ -536,6 +536,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1157811994608347156, guid: df9a2e6b3db3c714daca7fe8b4b8a98b,
+        type: 3}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157811994608347156, guid: df9a2e6b3db3c714daca7fe8b4b8a98b,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157811994608347156, guid: df9a2e6b3db3c714daca7fe8b4b8a98b,
+        type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157811994608347156, guid: df9a2e6b3db3c714daca7fe8b4b8a98b,
+        type: 3}
+      propertyPath: BypassListenerEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df9a2e6b3db3c714daca7fe8b4b8a98b, type: 3}
 --- !u!1 &1169739512

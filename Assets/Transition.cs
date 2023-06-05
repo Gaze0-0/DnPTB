@@ -29,13 +29,14 @@ public class Transition : MonoBehaviour
     void Update()
     {
         PlayAudioClipAndWait();
-        if (!_is2D)
+        if (_is2D == false)
         {
-            exposure.fixedExposure.value = _CorrectExposure;
+            this.exposure.fixedExposure.value = _CorrectExposure;
         }
         if (_is2D)
         {
-            _blackoutScren.SetActive(false);
+            this._blackoutScren.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
         
