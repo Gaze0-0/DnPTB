@@ -9,6 +9,8 @@ public class Transition : MonoBehaviour
     public Volume volume;
     private Exposure exposure;
     float _CorrectExposure = 10.75f;
+    public bool _is2D = false;
+    public GameObject _blackoutScren;
 
     public AudioSource audioSource;
     public AudioClip audioClip;
@@ -16,6 +18,10 @@ public class Transition : MonoBehaviour
     {
         volume.profile.TryGet(out exposure);
         audioSource = GetComponent<AudioSource>();
+        if (transform.GetChild(0).gameObject != null)
+        {
+            _blackoutScren = transform.GetChild(0).gameObject;
+        }
 
     }
 
@@ -23,9 +29,16 @@ public class Transition : MonoBehaviour
     void Update()
     {
         PlayAudioClipAndWait();
-        exposure.fixedExposure.value = _CorrectExposure;
+        if (!_is2D)
+        {
+            exposure.fixedExposure.value = _CorrectExposure;
+        }
+        if (_is2D)
+        {
+            _blackoutScren.SetActive(false);
+        }
     }
-
+        
     private void PlayAudioClipAndWait()
     {
         audioSource.clip = audioClip;
