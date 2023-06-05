@@ -34,5 +34,9 @@ public class Lock : MonoBehaviour
         {
             _Button_Lid = GameObject.Find("Button case pivot point");
         }
+        if (GameObject.Find("ProtectionLid") != null)
+        {
+            _Button_Lid = GameObject.Find("ProtectionLid");
+        }
     }
 }

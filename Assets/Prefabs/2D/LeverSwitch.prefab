@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2529300338179401418}
   - component: {fileID: 5881906433375899358}
+  - component: {fileID: 6486786652004963960}
+  - component: {fileID: 6893617021260107255}
   m_Layer: 0
   m_Name: LeverSwitch
   m_TagString: Untagged
@@ -84,3 +86,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &6486786652004963960
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728479694894878902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.0293627, y: 10.5724945, z: 0.20000005}
+  m_Center: {x: -2.5826008, y: 0.056867614, z: -0.000000117167595}
+--- !u!114 &6893617021260107255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728479694894878902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e3fc13372530b48835cc1a95a666b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isOn: 0
+  _CorrectState: 0
+  _Correct: 0
+  _CanFlip: 1
+  _LeverManager: {fileID: 0}

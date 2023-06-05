@@ -11,7 +11,7 @@ public class Screw : MonoBehaviour
     bool _IsUnscrewed = false;
     public GameObject _ScrewDriver;
     public GameObject _ScrewCase;
-
+    public bool _Is2D = false;
     private void Start()
     {
         SetupConections();
@@ -23,10 +23,18 @@ public class Screw : MonoBehaviour
         {
             if (_IsRotating)
             {
-                // Rotate counterclockwise
-                RotateObjectCounterclockwise();
-                _RotatingTimer -= Time.deltaTime;
-                transform.Translate(0, verticalSpeed, 0);
+                if (_Is2D == false)
+                {
+                    // Rotate counterclockwise
+                    RotateObjectCounterclockwise();
+                    _RotatingTimer -= Time.deltaTime;
+                    transform.Translate(0, verticalSpeed, 0);
+                }
+                if (_Is2D)
+                {
+                    _RotatingTimer -= Time.deltaTime;
+                    RotateObjectCounterclockwise();
+                }
             }
         }
         else
@@ -59,7 +67,15 @@ public class Screw : MonoBehaviour
     //rotates this counter clockwise
     void RotateObjectCounterclockwise()
     {
-        transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+        if (_Is2D == false)
+        {
+            transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+        }
+        if (_Is2D)
+        {
+            float rotationAmount = rotationSpeed * Time.deltaTime;
+            transform.Rotate(0f, 0f, rotationAmount);
+        }
     }
 
     //sets up Connections at the start of the game
