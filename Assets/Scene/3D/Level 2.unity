@@ -438,25 +438,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &721847649 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7165166624945231917, guid: 0464d7d1a4470404abc43fd7c31b7cf9,
-    type: 3}
-  m_PrefabInstance: {fileID: 7248444987579771174}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &721847650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721847649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7950b7ee5be8164590f9555e8e8c225, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _OpenCase: 0
 --- !u!1 &867674559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1052,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Global Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157811994608347152, guid: df9a2e6b3db3c714daca7fe8b4b8a98b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1157811994608347154, guid: df9a2e6b3db3c714daca7fe8b4b8a98b,
         type: 3}

@@ -61,7 +61,6 @@ public class LeverManager : MonoBehaviour
 
         for (int i = 0; i < transform.childCount; i++)
         {
-            Debug.Log(transform.childCount);
             Transform childTransform = transform.GetChild(i);
             Transform grandchildTransform = childTransform.GetChild(0);
             _Levers.Add(grandchildTransform.gameObject);
