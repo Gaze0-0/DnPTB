@@ -432,6 +432,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: screwdriver
       objectReference: {fileID: 0}
+    - target: {fileID: 7705551860514053658, guid: e24586ff1bd673249b0b93f19a96e7ca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e24586ff1bd673249b0b93f19a96e7ca, type: 3}
 --- !u!1 &433042466 stripped
@@ -591,6 +596,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ------UI---------
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496628534852534611, guid: dde13d86952bcbb409fe103a86daef99,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4496628534852534615, guid: dde13d86952bcbb409fe103a86daef99,
         type: 3}

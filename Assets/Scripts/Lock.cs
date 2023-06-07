@@ -15,7 +15,6 @@ public class Lock : MonoBehaviour
     //if the key is dragged onto the object then puzzle is solved and lock count -1
     private void OnTriggerEnter(Collider other)
     {
-        
         if (other.tag == "Key")
         {
             Destroy(other.gameObject);
@@ -37,6 +36,10 @@ public class Lock : MonoBehaviour
         if (GameObject.Find("ProtectionLid") != null)
         {
             _Button_Lid = GameObject.Find("ProtectionLid");
+        }
+        if (GameObject.Find("1D Case") != null)
+        {
+            _Button_Lid = GameObject.Find("1D Case");
         }
     }
 }
