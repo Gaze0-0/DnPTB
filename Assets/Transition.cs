@@ -16,28 +16,20 @@ public class Transition : MonoBehaviour
     public AudioClip audioClip;
     void Start()
     {
-        volume.profile.TryGet(out exposure);
+        //volume.profile.TryGet(out exposure);
         audioSource = GetComponent<AudioSource>();
-        if (transform.GetChild(0).gameObject != null)
-        {
-            _blackoutScren = transform.GetChild(0).gameObject;
-        }
-
+        // if (transform.GetChild(0).gameObject != null)
+        //{
+        //  _blackoutScren = transform.GetChild(0).gameObject;
+        // }
+        PlayAudioClipAndWait();
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayAudioClipAndWait();
-        if (_is2D == false)
-        {
-            this.exposure.fixedExposure.value = _CorrectExposure;
-        }
-        if (_is2D)
-        {
-            this._blackoutScren.SetActive(false);
-            Destroy(this.gameObject);
-        }
+        
+        
     }
         
     private void PlayAudioClipAndWait()
@@ -49,9 +41,20 @@ public class Transition : MonoBehaviour
     }
     private IEnumerator WaitForAudioClipToEnd()
     {
-        while (audioSource.isPlaying)
+        yield return new WaitForSeconds(0.75f);
+        Destroy(this.gameObject);
+        /*while (audioSource.isPlaying)
         {
+            if (_is2D == false)
+            {
+                //this.exposure.fixedExposure.value = _CorrectExposure;
+            }
+            if (_is2D)
+            {
+                // this._blackoutScren.SetActive(false);
+               
+            }
             yield return null;
-        }
+        }*/
     }
 }
