@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CaseMovement : MonoBehaviour
 {
-    float _rotationSpeed = 0.1f;
+    float _rotationSpeed = 0.2f;
     public bool _OpenCase = false;
 
     private void Update()
