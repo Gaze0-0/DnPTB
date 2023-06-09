@@ -21,6 +21,10 @@ public class Button : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+        else if (_Camera_GameManager.GetComponent<GameManager>()._Lock_Count > 0)
+        {
+            _Camera_GameManager.GetComponent<Camerashake>()._CanShake = true;
+        }
     }
 
     //sets up Connections at the start of the game
