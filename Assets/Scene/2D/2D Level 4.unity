@@ -600,7 +600,7 @@ PrefabInstance:
     - target: {fileID: 4496628534852534611, guid: dde13d86952bcbb409fe103a86daef99,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4496628534852534615, guid: dde13d86952bcbb409fe103a86daef99,
         type: 3}
@@ -776,6 +776,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LidOpen
       objectReference: {fileID: 0}
+    - target: {fileID: 3909990645415682676, guid: 5af0b1d0fd67c42439703e0be7a0f622,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6268282965759545495, guid: 5af0b1d0fd67c42439703e0be7a0f622,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -824,6 +829,11 @@ PrefabInstance:
     - target: {fileID: 7218586271661657180, guid: 5af0b1d0fd67c42439703e0be7a0f622,
         type: 3}
       propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7631636608620422719, guid: 5af0b1d0fd67c42439703e0be7a0f622,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

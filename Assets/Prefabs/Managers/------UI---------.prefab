@@ -331,7 +331,7 @@ MonoBehaviour:
   _is2D: 1
   _blackoutScren: {fileID: 0}
   audioSource: {fileID: 0}
-  audioClip: {fileID: 8300000, guid: c17f1435f4fc2ca45a6eed73035f4ec1, type: 3}
+  audioClip: {fileID: 8300000, guid: 3b50a7da219078343b25e1005f23a6d7, type: 3}
 --- !u!82 &700593166
 AudioSource:
   m_ObjectHideFlags: 0
@@ -342,7 +342,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c17f1435f4fc2ca45a6eed73035f4ec1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3b50a7da219078343b25e1005f23a6d7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
