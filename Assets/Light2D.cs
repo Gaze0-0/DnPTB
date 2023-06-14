@@ -21,7 +21,7 @@ public class Light2D : MonoBehaviour
         }
         if (_2DKeypad != null)
         {
-            if (_2DKeypad.GetComponent<KeyPad>()._IsActive)
+            if (_2DKeypad.GetComponent<KeyPad>()._IsActive == false)
             {
                 _isOff.gameObject.SetActive(false);
                 _isOn.gameObject.SetActive(true);

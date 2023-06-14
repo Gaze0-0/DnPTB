@@ -111,6 +111,7 @@ MonoBehaviour:
   _Trigger2: {fileID: 3909990645415682676}
   _Screws: 2
   Batteries: 0
+  Wire: {fileID: 0}
   _Camera_GameManager: {fileID: 0}
 --- !u!1001 &174866251
 PrefabInstance:
@@ -856,27 +857,27 @@ PrefabInstance:
     - target: {fileID: 4833905697094766559, guid: 24f323115c84e3640986aa528784d6c5,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5151658
+      value: 0.55612147
       objectReference: {fileID: 0}
     - target: {fileID: 4833905697094766559, guid: 24f323115c84e3640986aa528784d6c5,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6136642
+      value: 0.6624505
       objectReference: {fileID: 0}
     - target: {fileID: 4833905697094766559, guid: 24f323115c84e3640986aa528784d6c5,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.51562345
+      value: 0.5566155
       objectReference: {fileID: 0}
     - target: {fileID: 4833905697094766559, guid: 24f323115c84e3640986aa528784d6c5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.3427193
+      value: 2.37
       objectReference: {fileID: 0}
     - target: {fileID: 4833905697094766559, guid: 24f323115c84e3640986aa528784d6c5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.22132482
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 4833905697094766559, guid: 24f323115c84e3640986aa528784d6c5,
         type: 3}
