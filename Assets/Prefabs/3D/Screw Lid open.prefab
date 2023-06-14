@@ -85,7 +85,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594932383074196420}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.18, y: 0.69, z: 7.53}
   m_LocalScale: {x: 11, y: 11, z: 11}
   m_ConstrainProportionsScale: 0
@@ -169,6 +169,7 @@ MonoBehaviour:
   _Trigger2: {fileID: 1386280895247798194}
   _Screws: 2
   Batteries: 0
+  Wire: {fileID: 0}
   _Camera_GameManager: {fileID: 0}
 --- !u!1001 &1215972677251567621
 PrefabInstance:
@@ -351,7 +352,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ae64bc9d8c562054ea108d42d49db6b9,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ae64bc9d8c562054ea108d42d49db6b9,
         type: 3}
@@ -456,7 +457,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 6d9e6659db0140d4e8c0ad42dd192f0b,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6d9e6659db0140d4e8c0ad42dd192f0b,
         type: 3}

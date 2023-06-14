@@ -9,6 +9,7 @@ public class Switch : MonoBehaviour
     public bool _Correct = false;
     public bool _CanFlip = true;
     public GameObject _LeverManager;
+    public GameObject _Wire;
     bool _callCheck = false;
 
 
@@ -55,6 +56,17 @@ public class Switch : MonoBehaviour
         {
             _LeverManager.GetComponent<LeverManager>().CheckPuzzle();
             _callCheck = false;
+        }
+
+        if (_Correct)
+        {
+            _Wire.GetComponent<Wires>()._isOn = true;
+            _Wire.GetComponent<Wires>().ChangeMaterial();
+        }
+        else if (!_Correct)
+        {
+            _Wire.GetComponent<Wires>()._isOn = false;
+            _Wire.GetComponent<Wires>().ChangeMaterial();
         }
     }
 

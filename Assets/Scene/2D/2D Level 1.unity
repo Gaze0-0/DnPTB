@@ -351,6 +351,8 @@ MonoBehaviour:
   _Timer_Countdown: 0
   _Lock_Count: 0
   _HoldingObject: 0
+  _barCountDown: 0
+  _Bar: {fileID: 0}
 --- !u!114 &79999431
 MonoBehaviour:
   m_ObjectHideFlags: 0

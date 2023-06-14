@@ -16,6 +16,7 @@ public class Camerashake : MonoBehaviour
         normalPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         explosionTimerMax = 0.15f;
         explosionTimer = explosionTimerMax;
+        _Shake = 0.5f;
     }
 
     void Update()

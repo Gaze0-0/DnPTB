@@ -10,6 +10,8 @@ public class BatteryCase : MonoBehaviour
     public int _Screws;
     public int Batteries = 0;
 
+    public GameObject Wire;
+
     public GameObject _Camera_GameManager; //referance to game Manager in the camera
 
 
@@ -44,6 +46,8 @@ public class BatteryCase : MonoBehaviour
         {
             _Camera_GameManager.GetComponent<GameManager>()._Lock_Count--;
             Batteries++;
+            Wire.GetComponent<Wires>()._isOn = true;
+            Wire.GetComponent<Wires>().ChangeMaterial();
         }
     }
 

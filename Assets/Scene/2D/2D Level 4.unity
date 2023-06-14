@@ -351,6 +351,8 @@ MonoBehaviour:
   _Timer_Countdown: 0
   _Lock_Count: 1
   _HoldingObject: 0
+  _barCountDown: 0
+  _Bar: {fileID: 0}
 --- !u!114 &79999431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,6 +853,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7638245161427685982, guid: 5af0b1d0fd67c42439703e0be7a0f622,
+        type: 3}
+      propertyPath: Wire
+      value: 
+      objectReference: {fileID: 1697587366}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af0b1d0fd67c42439703e0be7a0f622, type: 3}
 --- !u!1001 &1697587365
@@ -927,6 +934,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d633821ea1d778144a2763b26440fd97, type: 3}
+--- !u!1 &1697587366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4022947291446110949, guid: d633821ea1d778144a2763b26440fd97,
+    type: 3}
+  m_PrefabInstance: {fileID: 1697587365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1705830764
 PrefabInstance:
   m_ObjectHideFlags: 0

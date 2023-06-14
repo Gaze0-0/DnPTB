@@ -9,7 +9,7 @@ public class KeyPad : MonoBehaviour
 {
     public string _Code;
     public string _CorrectCode;
-    bool _IsActive = true;
+    public bool _IsActive = true;
     public bool _Check = false;
     public GameObject _Camera_GameManager;
     public TextMeshPro _Screen;

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 261.8028, g: 324.33075, b: 429.2505, a: 1}
+  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -735,6 +735,8 @@ MonoBehaviour:
   _Timer_Countdown: 0
   _Lock_Count: 1
   _HoldingObject: 0
+  _barCountDown: 0
+  _Bar: {fileID: 0}
 --- !u!114 &867674565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,6 +832,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Screw Lid open
       objectReference: {fileID: 0}
+    - target: {fileID: 1937461932649001285, guid: 3d43ce89929a5c84793e6120ed5e2439,
+        type: 3}
+      propertyPath: Wire
+      value: 
+      objectReference: {fileID: 1907792577}
     - target: {fileID: 2119372579425206654, guid: 3d43ce89929a5c84793e6120ed5e2439,
         type: 3}
       propertyPath: m_RootOrder
@@ -982,21 +989,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495533605848738866, guid: 3eb734d5163f50a4687ba3746f531a67,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495533605848738866, guid: 3eb734d5163f50a4687ba3746f531a67,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495533605848738866, guid: 3eb734d5163f50a4687ba3746f531a67,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8495533605848738866, guid: 3eb734d5163f50a4687ba3746f531a67,
         type: 3}
@@ -1243,3 +1235,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc0c7869c7f0b8f4fa568f3baffe0f12, type: 3}
+--- !u!1 &1907792577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5827107571032960726, guid: 3eb734d5163f50a4687ba3746f531a67,
+    type: 3}
+  m_PrefabInstance: {fileID: 1465176656}
+  m_PrefabAsset: {fileID: 0}

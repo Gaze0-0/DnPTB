@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 261.8028, g: 324.33075, b: 429.2505, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -740,6 +740,8 @@ MonoBehaviour:
   _Timer_Countdown: 0
   _Lock_Count: 0
   _HoldingObject: 0
+  _barCountDown: 0
+  _Bar: {fileID: 0}
 --- !u!114 &867674565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -959,6 +961,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958091308075705514, guid: dde13d86952bcbb409fe103a86daef99,
+        type: 3}
+      propertyPath: m_Name
+      value: Bar Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958091308690124285, guid: dde13d86952bcbb409fe103a86daef99,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -76
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dde13d86952bcbb409fe103a86daef99, type: 3}
